@@ -1,0 +1,13 @@
+h1 {
+  text-align: center;
+  background-color: tomato;
+  color: white;
+}
+#headliner,
+#dvOdd,
+#footerId {
+  text-align: center;
+}
+.bcIcan {
+  background-color: yellow;
+}
