@@ -55,6 +55,37 @@ function evenorodd() {
   }
 }
 
+/* document.getElementById("btnTest").addEventListener("click", addListItems); */
+document.getElementById("btnTest").addEventListener("click", addListItems);
+
+/* document.getElementById("herewego").addEventListener("click", wtf);
+function wtf() {
+  alert("wtf");
+} */
+
+function addListItems() {
+  let iCount = prompt("Loops?");
+  //let number = prompt("Number(s) to evaluate?");
+  for (let i = 0; i < iCount; i++) {
+    let ul = document.getElementById("list");
+    let li = document.createElement("li");
+    let children = ul.children.length + 1;
+    li.setAttribute("id", "Element" + children);
+    li.appendChild(document.createTextNode("Element " + children));
+    ul.appendChild(li);
+  }
+
+  //let iCounter = prompt("Loops?");
+  /* for (let i = 0; i < iCounter; i++) {
+    let ul = document.getElementById("list");
+    let li = document.createElement("li");
+    let children = ul.children.length + 1;
+    li.setAttribute("id", "Element" + children);
+    li.appendChild(document.createTextNode("Element " + children));
+  }  */
+  //console.log("hello");
+}
+
 /* function isEven(n) {
     let num =prompt("Input a number:");
     //let number2 = prompt("Input the secound number:");
